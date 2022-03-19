@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+void tek_mi_cift_mi(){
+    int sayi;
+    cout<<"Lütfen bir sayı giriniz, girilen sayı çift ise 0, tek ise 1 cevabını alacaksınız!"<<endl;
+    cin>>sayi;
+    if(sayi%2==0)
+        cout<<false;
+    else
+        cout<<true;
+}
+
+int main() {
+    
+    tek_mi_cift_mi();
+
+
+    return 0;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------------
+        void tek_mi_cift_mi(int sayi){
+            cout<<"Lütfen bir sayı giriniz, girilen sayı çift ise 0, tek ise 1 cevabını alacaksınız!"<<endl;
+            cin>>sayi;
+            if(sayi%2==0)
+                cout<<false;
+            else
+                cout<<true;
+        }
+
+        int main() {
+            int sayi;
+            tek_mi_cift_mi(sayi);
+            return 0;
+        }
+--------------------------------------------------------------------------------------------------------------------------------------------------
+      void tek_mi_cift_mi(int sayi){
+            if(sayi%2==0)
+                cout<<false;
+            else
+                cout<<true;
+        }
+        int main() {
+            cout<<"Lütfen bir sayı giriniz, girilen sayı çift ise 0, tek ise 1 cevabını alacaksınız!"<<endl;
+            int sayi;
+            cin>>sayi; 
+            tek_mi_cift_mi(sayi);
+            return 0;
+        }
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+*/
