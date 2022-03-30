@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main(){	
+    char mesaj[] = "Bugun hava cok guzel!";
+    int boslukSayisi = 0;
+    for(int i=0; i<strlen(mesaj);i++) {
+        if(mesaj[i] == ' ')
+        boslukSayisi++;
+    }
+    
+    cout << "Bu cumlede " << boslukSayisi << " boşluk bulunmaktadir."<<endl;
+    cout << "Yani boşluk sayısının 1 fazlası kadar " << boslukSayisi+1 << " tane kelime vardır.";
+    
+    return 0;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+int main(){
+    ofstream dosya;("deneme.txt");
+    
+    for(int i=0;i<10;i++) {
+        int sayi;
+        cin >> sayi;
+        dosya << sayi << endl;
+    }
+    
+    dosya.close();
+    
+return 0;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
